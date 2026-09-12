@@ -50,3 +50,36 @@ HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer, len, HAL_MAX_DELAY);
 
 t += 0.1f;
 HAL_Delay(50); // Saniyede 20 örnek (20 Hz)
+
+
+
+
+
+Adım Adım Kullanım Kılavuzu
+Bağlantı ve Filtreleme Kurulumu:
+
+Cihazınızı bilgisayarın USB portuna bağlayın.
+
+Arayüzden ilgili COM Portunu seçin (Port görünmüyorsa 🔄 Yenile butonuna basın).
+
+Cihazınızın baudrate hızını seçin (Örn: 115200).
+
+Gerekiyorsa Ön Ek (Prefix) bilgisini girin ve veri Ayraç tipini (Virgül, Noktalı Virgül veya Boşluk) seçip "Cihaza Bağlan" butonuna tıklayın.
+
+Kanal İsimlendirme:
+
+✏ İsimleri Değiştir butonuna tıklayarak kanallara kendi özel test isimlerinizi verebilirsiniz.
+
+Veri Kaydı ve Oynatma:
+
+⏺ Kayıt Başlat (CSV) tuşuyla canlı verileri zaman damgalı olarak diske kaydedebilir, ▶ Geçmişi Oynat tuşuyla eski kayıtları tekrar ekrana yansıtıp inceleyebilirsiniz.
+
+
+Kurulum ve Gereksinimler
+Projeyi kaynak kodundan çalıştırmak için gerekli Python kütüphaneleri:
+pip install PyQt5 pyqtgraph pyserial
+python Akilli_Donanim_Test_İstasyonu.py
+
+
+
+Geliştirici: Gani Ahmet Karabacak
